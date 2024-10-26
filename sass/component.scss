@@ -3,13 +3,11 @@
 .container {
   /* top part */
   max-width: 60rem;
-  height: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.174);
   /* center container */
   margin: 15rem auto;
-  // margin
 
   /* media-query */
   @media only screen and (max-width: var1.$bp-phone) {
@@ -21,7 +19,7 @@
     background-color: #fff;
     padding: 3rem;
     border-radius: 0.5rem;
-    position: relative;
+
     /* media-query */
     @media only screen and (max-width: var1.$bp-phone) {
       grid-area: 1/1/2/-1;

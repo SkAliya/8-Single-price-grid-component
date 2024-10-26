@@ -56,10 +56,6 @@ body {
 }
 
 /* footer styling */
-footer {
-  grid-area: 4/1/5/-1;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -72,9 +68,9 @@ footer {
 .container {
   /* top part */
   max-width: 60rem;
-  height: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.174);
   /* center container */
   margin: 15rem auto;
   /* media-query */
@@ -91,7 +87,6 @@ footer {
   background-color: #fff;
   padding: 3rem;
   border-radius: 0.5rem;
-  position: relative;
   /* media-query */
 }
 @media only screen and (max-width: 25em) {
