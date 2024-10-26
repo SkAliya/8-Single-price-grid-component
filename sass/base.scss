@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* CSS VARIABLES */
+:root {
+  /* COLORS */
+  --color-primary: hsl(179, 62%, 43%);
+  --color-secondary: hsl(71, 73%, 54%);
+  --card-color: hsl(204, 43%, 93%);
+  --head-text-color: hsl(218, 22%, 67%);
+}
+
+/* utitlity classes */
+.mb-medium {
+  margin-bottom: 1.2rem;
+}
+.mb-small {
+  margin-bottom: 0.5rem;
+}
+
+/* media-queries */
+$bp-tablet: 37.5em; //600px
+$bp-tab-small: 31.25em; //500px
+$bp-phone: 25em; //400px
+$bp-small-phone: 18.75em; //300px
+
+/* GLOBAL SETTINGS */
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  @media only screen and (max-width: $bp-tablet) {
+    font-size: 50%;
+  }
+  @media only screen and (max-width: $bp-tab-small) {
+    font-size: 37.5%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  line-height: 1.6;
+  background-color: hsl(210, 64%, 95%);
+  @media only screen and (max-width: $bp-phone) {
+    padding: 3rem;
+  }
+}
+
+// main,
+// section {
+//   min-height: 100vh;
+// }
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+/* footer styling */
+footer {
+  grid-area: 4/1/5/-1;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-primary);
+}
