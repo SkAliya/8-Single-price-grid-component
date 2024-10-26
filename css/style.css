@@ -62,7 +62,7 @@ body {
 }
 
 .attribution a {
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 .container {
@@ -71,6 +71,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.174);
+  border-radius: 0.5rem;
   /* center container */
   margin: 15rem auto;
   /* media-query */
@@ -86,7 +87,6 @@ body {
   grid-area: 1/1/2/-1;
   background-color: #fff;
   padding: 3rem;
-  border-radius: 0.5rem;
   /* media-query */
 }
 @media only screen and (max-width: 25em) {
@@ -109,7 +109,6 @@ body {
   grid-area: 2/1/3/2;
   background-color: var(--color-primary);
   padding: 3rem;
-  border-bottom-left-radius: 0.5rem;
   color: hsl(204, 43%, 93%);
   /* media-query */
 }
@@ -157,7 +156,6 @@ body {
   background-color: hsla(179, 62%, 43%, 0.801);
   padding: 3rem;
   padding-right: 6rem;
-  border-bottom-right-radius: 0.5rem;
   color: hsl(204, 43%, 93%);
   /* media-query */
 }
